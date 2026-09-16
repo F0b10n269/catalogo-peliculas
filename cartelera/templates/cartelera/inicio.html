@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Cartelera | Cine Aurora{% endblock %}
+
+{% block contenido %}
+    <h2>Cartelera actual ({{ total }} peliculas)</h2>
+
+    <section class="grilla">
+        {% for p in peliculas %}
+            <article class="tarjeta">
+                <h3>{{ p.titulo|title }}</h3>
+                <p class="genero">{{ p.genero }}</p>
+                <p><strong>Director:</strong> {{ p.director }}</p>
+                <p><strong>Duracion:</strong> {{ p.duracion }} min</p>
+
+                {% if p.puntuacion >= 8.5 %}
+                    <span class="destacada">★ Destacada</span>
+                {% endif %}
+
+                <a class="boton" href="{% url 'cartelera:detalle' p.id %}">
+                    Ver detalle
+                </a>
+            </article>
+        {% empty %}
+            <p class="vacio">No hay peliculas en cartelera.</p>
+        {% endfor %}
+    </section>
+{% endblock %}

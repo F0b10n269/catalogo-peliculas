@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block titulo %}{{ p.titulo }} | Cine Aurora{% endblock %}
+
+{% block contenido %}
+    <article class="detalle">
+        <h2>{{ p.titulo|title }}</h2>
+        <p class="genero">{{ p.genero }}</p>
+
+        <ul class="datos">
+            <li><strong>ID:</strong> {{ p.id }}</li>
+            <li><strong>Director:</strong> {{ p.director }}</li>
+            <li><strong>Año:</strong> {{ p.anio }}</li>
+            <li><strong>Duración:</strong> {{ p.duracion }} minutos</li>
+            <li><strong>Sala:</strong> {{ p.sala }}</li>
+            <li><strong>Horario:</strong> {{ p.horario }}</li>
+            <li><strong>Clasificación:</strong> {{ p.clasificacion }}</li>
+            <li><strong>Puntuación:</strong> {{ p.puntuacion|floatformat:1 }}/10</li>
+        </ul>
+
+        <p class="sinopsis">{{ p.sinopsis|truncatewords:30 }}</p>
+
+        {% if p.duracion > 150 %}
+            <p class="aviso">⚠️ Pelicula larga: supera las 2 horas y media</p>
+        {% endif %}
+
+        <a class="boton volver" href="{% url 'cartelera:inicio' %}">
+            ← Volver a la cartelera
+        </a>
+    </article>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block titulo %}Cartelera{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <header class="cabecera">
+        <img src="{% static 'images/logo.png' %}" alt="Logo Cartelera" class="logo">
+        <h1>Cine Aurora</h1>
+        <p class="lema">Las mejores peliculas, en un solo lugar</p>
+    </header>
+
+    <main class="contenido">
+        {% block contenido %}{% endblock %}
+    </main>
+
+    <footer class="pie">
+        <p>TI3041 Programacion Back End · Unidad 1 · 2026</p>
+    </footer>
+</body>
+</html>
