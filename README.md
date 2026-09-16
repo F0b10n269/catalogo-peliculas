@@ -1,17 +1,17 @@
-# 🎮 Catálogo de Videojuegos - Prueba Formativa Django
+#  Catálogo de Videojuegos - Prueba Formativa Django
 
 Este proyecto corresponde a la **Prueba Formativa: mi primer sitio en Django** para la asignatura **TI3041 Programación Back End**. Consiste en una aplicación web básica construida desde cero que despliega un catálogo de elementos estáticos mediante el uso de vistas basadas en funciones, enrutamiento con parámetros, herencia de plantillas y archivos estáticos, prescindiendo totalmente de modelos o bases de datos relacionales.
 
 ---
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 * **Python 3.13**
 * **Django 5.2**
 * **Git & GitHub**
 
 ---
 
-## 🚀 Instrucciones de Instalación y Ejecución
+##  Instrucciones de Instalación y Ejecución
 
 Sigue estos pasos detallados para clonar el repositorio y levantar el servidor de desarrollo local en tu equipo:
 
@@ -53,10 +53,10 @@ python manage.py runserver
 ```
 
 Una vez iniciado, abre tu navegador web favorito e ingresa a la dirección local de desarrollo:  
-👉 **[http://127.0.0](http://127.0.0)**
+ **[http://127.0.0](http://127.0.0)**
 
 ---
 
-## 🤖 Declaración de Uso de IA
+##  Declaración de Uso de IA
 *De acuerdo con la sección 6 de las reglas del proyecto:*  
 **Uso de IA:** Se utilizó un asistente de IA para estructurar el esqueleto inicial de los archivos de vistas (`views.py`) y plantillas de herencia HTML, modificando posteriormente las rutas internas, los textos de los elementos del catálogo y aplicando estilos CSS personalizados propios.
