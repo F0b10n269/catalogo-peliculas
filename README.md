@@ -1,4 +1,4 @@
-#  Catálogo de Videojuegos - Prueba Formativa Django
+#  Catálogo de peliculas - Prueba Formativa Django
 
 Este proyecto corresponde a la **Prueba Formativa: mi primer sitio en Django** para la asignatura **TI3041 Programación Back End**. Consiste en una aplicación web básica construida desde cero que despliega un catálogo de elementos estáticos mediante el uso de vistas basadas en funciones, enrutamiento con parámetros, herencia de plantillas y archivos estáticos, prescindiendo totalmente de modelos o bases de datos relacionales.
 
